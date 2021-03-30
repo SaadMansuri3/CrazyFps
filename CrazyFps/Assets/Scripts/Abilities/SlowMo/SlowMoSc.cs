@@ -9,7 +9,7 @@ public class SlowMoSc : MonoBehaviour
     
     
     private float currentSlowMo;
-    private bool isSlowOn = false;
+    public bool isSlowOn = false;
 
     private void Update()
     {
@@ -24,7 +24,7 @@ public class SlowMoSc : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.E))
         {
-            if (!isSlowOn && currentSlowMo > 0)
+            if (!isSlowOn)
             {
                 Time.timeScale = slowMoValue;
                 Time.fixedDeltaTime = Time.timeScale * .02f;
