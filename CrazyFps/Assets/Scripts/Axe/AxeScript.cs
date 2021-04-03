@@ -20,7 +20,7 @@ public class AxeScript : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        Debug.Log(collision.transform.name);
+
         activated = false;
         rb.isKinematic = true;
     }
