@@ -4,7 +4,7 @@ public class HookShot : MonoBehaviour
 {
     #region Varibales
     [HeaderAttribute("Required Entities")]
-    public Transform debugPointTransform;
+    //public Transform debugPointTransform;
     public Camera playerCamera;
     public Rigidbody rb;
     public CharacterController cc;
@@ -78,7 +78,7 @@ public class HookShot : MonoBehaviour
             }
             if (hit.transform.gameObject.layer == LayerMask.NameToLayer("Wall"))
             {
-                debugPointTransform.position = hit.point;
+                //debugPointTransform.position = hit.point;
                 hookShotPosition = hit.point;
 
                 hookShotSize = 0f;

@@ -749,7 +749,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 092bb0cef6725584fac2957a91ab3567, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  projectile: {fileID: 1782638120339076573, guid: c5f9a872e3aba384e9262a04c104f6fc,
+  projectile: {fileID: 3395804010483287664, guid: 23106279960e08c499f6b589ce1eefd9,
     type: 3}
   ProjectileForwardForce: 15
   ProjectileUpwardForce: 4.2

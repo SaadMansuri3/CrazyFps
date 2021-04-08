@@ -3,26 +3,18 @@ using UnityEngine;
 
 public class SlowMoSc : MonoBehaviour
 {
-    public float slowMoDuration = 5f;
-    public float slowMoValue = 0.2f;
-    public TextMeshProUGUI abilityDisplay;
+    public float slowMoValue = 0.5f;
     
-    
-    private float currentSlowMo;
     public bool isSlowOn = false;
 
     private void Update()
     {
-        if (abilityDisplay != null)
-        {
-            abilityDisplay.SetText(currentSlowMo + "/" + slowMoDuration);
-        }
         SlowMoAbility();
     }
 
     public void SlowMoAbility()
     {
-        if (Input.GetKeyDown(KeyCode.E))
+        if (Input.GetKeyDown(KeyCode.Q))
         {
             if (!isSlowOn)
             {
